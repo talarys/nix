@@ -3,6 +3,8 @@
 {
   programs.zsh.enable = true;
   programs.git.enable = true;
+  programs.thunar.enable = true;
+
 
   nixpkgs.config.allowUnfree = true;
 
@@ -13,11 +15,14 @@
     firefox
     lunarvim
     kitty
-    dolphin
     zip
     firefox
     nixpkgs-fmt
     wofi
-    vscode
+    pavucontrol
+    dolphin
+    wl-clipboard
+    gnome.gnome-keyring
+    util-linux
   ];
 }

@@ -32,6 +32,8 @@
       discord
       wofi
       nodejs
+      gh
+      unstable.vscode
     ];
     sessionVariables = {
       EDITOR = "lvim";

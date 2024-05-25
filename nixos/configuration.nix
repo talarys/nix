@@ -11,6 +11,7 @@
     ./sound.nix
     ./packages.nix
     ./users.nix
+    ./stylix.nix
   ];
 
   nixpkgs = {
@@ -34,7 +35,9 @@
     };
 
   networking.hostName = "nixos";
+
   services.xserver.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 
   system.stateVersion = "23.11";
 }

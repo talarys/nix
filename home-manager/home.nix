@@ -6,6 +6,7 @@
   imports = [
     ./zsh.nix
     ./starship.nix
+
   ];
 
   nixpkgs = {
@@ -21,7 +22,6 @@
       neofetch
       nnn
       zip
-      zoxide
       lunarvim
       firefox
       vivaldi
@@ -32,7 +32,6 @@
       discord
       wofi
       nodejs
-      gh
       unstable.vscode
     ];
     sessionVariables = {
@@ -47,10 +46,11 @@
       userEmail = "d.simon.ssx0@gmail.com";
     };
 
-  programs.zoxide = {
-    enable = true;
-    enableZshIntegration = true;
-  };
+  programs.zoxide =
+    {
+      enable = true;
+      enableZshIntegration = true;
+    };
 
   programs.kitty = {
     enable = true;
@@ -58,7 +58,7 @@
     settings = {
       font_family = "FiraCode Nerd Font Mono";
       font_size = 12;
-      window_padding_width = 5;
+      windows_padding_width = 5;
       background_opacity = "0.8";
       confirm_os_window_close = 0;
     };

@@ -11,7 +11,6 @@
     ./sound.nix
     ./packages.nix
     ./users.nix
-    ./stylix.nix
   ];
 
   nixpkgs = {
@@ -38,6 +37,7 @@
 
   services.xserver.enable = true;
   services.gnome.gnome-keyring.enable = true;
+
 
   system.stateVersion = "23.11";
 }

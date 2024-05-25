@@ -16,7 +16,6 @@
     lunarvim
     kitty
     zip
-    firefox
     nixpkgs-fmt
     wofi
     pavucontrol

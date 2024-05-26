@@ -1,8 +1,8 @@
 { pkgs, ... }:
 
 {
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = "talarys";
+  # services.displayManager.autoLogin.enable = true;
+  # services.displayManager.autoLogin.user = "talarys";
 
   users.users.talarys = {
     isNormalUser = true;

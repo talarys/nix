@@ -1,3 +1,5 @@
+{ config, ... }:
+
 {
   imports = [
     ./hardware-configuration.nix
@@ -9,6 +11,9 @@
     ./sound.nix
     ./packages.nix
     ./users.nix
+    ./display-manager.nix
+    ./env.nix
+    ./stylix.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -16,8 +21,8 @@
   nix = {
     settings = {
       experimental-features = "nix-command flakes";
+      nix-path = config.nix.nixPath;
     };
-    channel.enable = false;
   };
 
   networking.hostName = "nixos";

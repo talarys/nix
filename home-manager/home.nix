@@ -9,6 +9,8 @@
     ./kitty.nix
     ./zoxide.nix
     ./git.nix
+    ./hyprland.nix
+    ./hypr.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -18,25 +20,41 @@
     homeDirectory = "/home/talarys";
     stateVersion = "23.11";
     packages = with pkgs;[
-      neofetch
-      nnn
       zip
       lunarvim
-      firefox
       vivaldi
       vivaldi-ffmpeg-codecs
       kitty
       nerdfonts
       nixpkgs-fmt
       discord
-      wofi
       nodejs
-      vscode
+      neofetch
+      onefetch
+      ipfetch
+      cpufetch
+      ramfetch
+      starfetch
+      octofetch
+      zfxtop
+      kmon
+      vdpauinfo
+      nvtopPackages.full
     ];
     sessionVariables = {
       EDITOR = "lvim";
     };
   };
+
+  programs.htop.enable = true;
+  programs.btop.enable = true;
+  programs.bottom.enable = true;
+  programs.nnn.enable = true;
+  programs.firefox.enable = true;
+  programs.wofi.enable = true;
+  programs.vscode.enable = true;
+  programs.fzf.enable = true;
+  programs.imv.enable = true;
 
   programs.home-manager.enable = true;
   systemd.user.startServices = "sd-switch";

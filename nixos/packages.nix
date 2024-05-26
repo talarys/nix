@@ -18,8 +18,6 @@
     zip
     nixpkgs-fmt
     wofi
-    pavucontrol
-    dolphin
     wl-clipboard
     gnome.gnome-keyring
     util-linux

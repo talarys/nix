@@ -8,6 +8,7 @@
       {
         ll = "ls -lah";
         rebuild = "sudo nixos-rebuild switch --flake ~/nix";
+        cd = "z";
       };
 
     zplug = {
